@@ -1,16 +1,18 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 export default function TypingIndicator({ isRTL }) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className={`flex items-center gap-2 mb-4 ${isRTL ? 'justify-start' : 'justify-end'}`}
+      className={`flex items-center gap-2 mb-4 ${isRTL ? "justify-start" : "justify-end"}`}
     >
-      <div className={`bg-chat-card text-text px-4 py-3 rounded-2xl border border-accent/20 ${isRTL ? 'rounded-tr-sm' : 'rounded-tl-sm'}`}>
-        <div className="flex items-center gap-2" dir={isRTL ? 'rtl' : 'ltr'}>
+      <div
+        className={`bg-chat-card text-text px-4 py-3 rounded-2xl border border-accent/20 ${isRTL ? "rounded-tr-sm" : "rounded-tl-sm"}`}
+      >
+        <div className="flex items-center gap-2" dir={isRTL ? "rtl" : "ltr"}>
           <span className="text-sm text-accent-light font-medium">
-            {isRTL ? 'جاري التفكير' : 'Thinking'}
+            {isRTL ? "" : ""}
           </span>
           <div className="flex gap-1">
             {[0, 1, 2].map((i) => (

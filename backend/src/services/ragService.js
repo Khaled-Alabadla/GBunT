@@ -25,7 +25,7 @@ export async function handleChat(req, res) {
     const isArabic = /[\u0600-\u06FF]/.test(message);
     const knowledgeContext = isArabic ? coffeeKnowledgeAR : coffeeKnowledgeEN;
 
- const systemPrompt = `
+    const systemPrompt = `
 أنت باريستا مصري صايع مهنة، اسمك "خبير القهوة".
 لغتك هي العامية المصرية بتاعة "ولاد البلد" الشاطرين، مش لغة كتب ولا لغة كرتون.
 
@@ -65,8 +65,8 @@ ${knowledgeContext}
         model: "deepseek-ai/DeepSeek-V4-Pro",
         messages,
         max_tokens: 1024,
-        stream: false, 
-        temperature: 0.2, 
+        stream: false,
+        temperature: 0.2,
         top_p: 0.8,
         repetition_penalty: 1.1
       })
@@ -80,7 +80,6 @@ ${knowledgeContext}
     const data = await response.json();
     const fullContent = data.choices[0]?.message?.content || "";
 
-    // أو نرسل الرسالة كاملة كـ chunk واحد كبير
     if (fullContent) {
       res.write(`data: ${JSON.stringify({ type: 'chunk', content: fullContent })}\n\n`);
     }
