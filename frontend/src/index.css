@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Montserrat:wght@700;800;900&family=Playfair+Display:wght@700&family=Tajawal:wght@400;700&family=Lato:wght@400;700&family=Cairo:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Lato', 'Cairo', sans-serif;
+  background-color: #1b120b;
+  color: #e6ccb2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1b120b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9c6644;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b07a54;
+}

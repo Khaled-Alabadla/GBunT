@@ -1,0 +1,10 @@
+{
+  "title": "GBunT",
+  "subtitle": "Get your coffee, then we'll see what to talk about",
+  "placeholder": "Ask me anything about coffee...",
+  "send": "Send",
+  "welcome": "I only talk about coffee. Do you have a coffee-related question?",
+  "offTopic": "I only specialize in coffee ☕ Do you have a coffee-related question?",
+  "thinking": "Thinking...",
+  "error": "Something went wrong, please try again"
+}
