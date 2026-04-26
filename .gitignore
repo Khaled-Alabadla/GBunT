@@ -4,3 +4,4 @@ backend/chroma_db/
 .DS_Store
 *.log
 backend/.env
+dist/
