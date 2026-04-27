@@ -22,9 +22,10 @@ This chatbot uses **Retrieval-Augmented Generation (RAG)** to provide accurate, 
 ### AI Model
 
 - **Provider**: TogetherAI
-- **Model**: `deepseek-ai/DeepSeek-V4-Pro`
+- **Model**: `OpenAI GPT-OSS 120B`
 
 The model is chosen for its:
+
 - Strong Arabic capabilities
 - Serverless availability (no dedicated endpoint needed)
 - Cost-effectiveness
@@ -51,12 +52,14 @@ cd frontend
 npm install
 npm run dev
 ```
+
 ## Tech Stack
 
 - **Frontend**: React.js + Vite + Tailwind CSS + Framer Motion
 - **Backend**: Node.js + Express.js
-- **AI**: TogetherAI (deepseek-ai/DeepSeek-V4-Pro)
+- **AI**: TogetherAI (OpenAI GPT-OSS 120B)
 - **RAG**: Direct markdown file injection into system prompt
 
 ---
-*Developed with ❤️ & ☕ by **Khaled-Alabadla***
+
+\*Developed with ❤️ & ☕ by **Khaled-Alabadla\***

@@ -45,7 +45,7 @@ export default function ChatWindow({ messages, isLoading, streamingMessage, chat
               <div className="relative text-5xl">☕</div>
             </div>
             <div>
-              <h1 className={`font-black pb-[5px] text-4xl tracking-widest drop-shadow-2xl ${isRTL ? 'font-tajawal' : 'font-poppins'}`}>
+              <h1 className={`font-black pb-[5px] text-4xl tracking-widest drop-shadow-2xl`}>
                 {isRTL ? (
                   <>
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-cream via-accent-light to-accent">جي </span>
